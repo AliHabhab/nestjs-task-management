@@ -9,11 +9,11 @@ import {
   Query,
   RequestTimeoutException,
 } from '@nestjs/common';
-import { CreateTaskDto } from './dto/create-task.dto';
-import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
-import { UpdateTaskStatusDto } from './dto/update-task-status.dto';
-import { Task, TaskStatus } from './task.model';
-import { TasksService } from './tasks.service';
+import { CreateTaskDto } from '../Dto/tasks/create-task.dto';
+import { GetTasksFilterDto } from '../Dto/tasks/get-tasks-filter.dto';
+import { UpdateTaskStatusDto } from '../Dto/tasks/update-task-status.dto';
+import { Task, TaskStatus } from '../Models/task.model';
+import { TasksService } from '../Services/tasks.service';
 
 @Controller('tasks')
 export class TasksController {
