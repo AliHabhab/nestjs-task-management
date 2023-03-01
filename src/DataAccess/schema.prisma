@@ -1,0 +1,4 @@
+datasource db {
+    provider = "postgresql"
+    url      = "postgresql://postgre:12345@localhost:5432/task-management?schema=public"
+}
